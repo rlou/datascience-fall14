@@ -1,0 +1,5 @@
+My deduplication solution simply involves adding the missing fields that were not being parsed in the template file (minus the description - the data was too complex for me to come up with a parsing scheme for it). I added the source and manufacturing fields to attempt to more accurately find duplicated entries. I also decided to change from using the default string comparator to my own Levenshtein comparator, which returns 1 on Levenshtein values greater than .95 (hopefully producing accurate results with enough error for small differences between duplicated entries).
+
+Still, with this, I was only able to achieve a precision of approximately .5423 and a recall of apporximately .1230. As can be seen, the deduplication processes did not work very well, producing almost as many false positives as true positives and only properly matching 12% of the actual number of total true positives.
+
+To run my code, simply run product_dedup.py, then run precision.py. precision.py will print the precision and recall of the deduplication processes right in the terminal.

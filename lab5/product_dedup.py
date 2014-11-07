@@ -12,6 +12,8 @@ from numpy import nan
 import dedupe
 from unidecode import unidecode
 
+import Levenshtein
+
 # ## Logging
 
 # Dedupe uses Python logging to show or suppress verbose output. Added for convenience.
@@ -44,12 +46,23 @@ training_file = 'products_training.json'
 
 def customComparator(field_1, field_2) :
     if field_1 and field_2 :
-        if field_1 == field_2 :
-            return 1
-        else:
+	if Levenshtein.ratio(field_1, field_2) > .95 :
+	    return 1
+	else:
             return 0
     else :
         return nan
+
+def priceComparator(field_1, field_2) :
+    if field_1 and field_2 :
+	if field_1 == field_2 :
+	    return 1
+	else:
+            return 0
+    else :
+        return nan
+
+
 
 def preProcess(column):
     """
@@ -95,8 +108,10 @@ else:
     # Here you will need to define the fields dedupe will pay attention to. You also need to define the comparator
     # to be used and specify any customComparators. Please read the dedupe manual for details
     fields = [
-        {'field' : 'title', 'type': 'String'},
-        {'field' : 'price', 'type': 'Custom', 'has missing':True, 'comparator' : customComparator}
+        {'field' : 'title', 'type': 'String', 'comparator': customComparator},
+	{'field' : 'source', 'type': 'Source', 'sources' : ['amazon', 'google']},
+	{'field' : 'manufacturer', 'type': 'String', 'has missing':True, 'comparator' : customComparator},
+        {'field' : 'price', 'type': 'Custom', 'has missing':True, 'comparator' : priceComparator}
         ]
 
     # Create a new deduper object and pass our data model to it.

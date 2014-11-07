@@ -1,0 +1,743 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 12288 bytes for committing reserved memory.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   In 32 bit mode, the process size limit was hit
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Use 64 bit Java on a 64 bit OS
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_linux.cpp:2798), pid=2193, tid=2975894336
+#
+# JRE version: OpenJDK Runtime Environment (7.0_65-b32) (build 1.7.0_65-b32)
+# Java VM: OpenJDK Client VM (24.65-b04 mixed mode, sharing linux-x86 )
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x092ce400):  JavaThread "IPC Client (20628060) connection to localhost/127.0.0.1:8020 from terrapin" daemon [_thread_new, id=3031, stack(0xb15b8000,0xb1609000)]
+
+Stack: [0xb15b8000,0xb1609000]
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+=>0x092ce400 JavaThread "IPC Client (20628060) connection to localhost/127.0.0.1:8020 from terrapin" daemon [_thread_new, id=3031, stack(0xb15b8000,0xb1609000)]
+  0xb6812800 JavaThread "DestroyJavaVM" [_thread_blocked, id=2274, stack(0xb6917000,0xb6968000)]
+  0xb1ecd000 JavaThread "Timer-1" [_thread_in_Java, id=2793, stack(0xb1609000,0xb165a000)]
+  0xb1ecb400 JavaThread "IPC Server handler 0 on 10033" daemon [_thread_blocked, id=2792, stack(0xb165a000,0xb16ab000)]
+  0xb1ec9c00 JavaThread "IPC Server listener on 10033" daemon [_thread_in_native, id=2791, stack(0xb16ab000,0xb16fc000)]
+  0xb1ec8400 JavaThread "IPC Server Responder" daemon [_thread_in_native, id=2790, stack(0xb16fc000,0xb174d000)]
+  0xb1ec6800 JavaThread "IPC Server handler 9 on 10020" daemon [_thread_blocked, id=2789, stack(0xb174d000,0xb179e000)]
+  0xb1ec5000 JavaThread "IPC Server handler 8 on 10020" daemon [_thread_blocked, id=2788, stack(0xb179e000,0xb17ef000)]
+  0xb1ec3400 JavaThread "IPC Server handler 7 on 10020" daemon [_thread_blocked, id=2787, stack(0xb17ef000,0xb1840000)]
+  0xb1ec1c00 JavaThread "IPC Server handler 6 on 10020" daemon [_thread_blocked, id=2786, stack(0xb1840000,0xb1891000)]
+  0xb1ec0400 JavaThread "IPC Server handler 5 on 10020" daemon [_thread_blocked, id=2785, stack(0xb1891000,0xb18e2000)]
+  0xb1ebec00 JavaThread "IPC Server handler 4 on 10020" daemon [_thread_blocked, id=2784, stack(0xb18e2000,0xb1933000)]
+  0xb1ebd000 JavaThread "IPC Server handler 3 on 10020" daemon [_thread_blocked, id=2783, stack(0xb1933000,0xb1984000)]
+  0xb1ebb800 JavaThread "IPC Server handler 2 on 10020" daemon [_thread_blocked, id=2782, stack(0xb1984000,0xb19d5000)]
+  0xb1eba000 JavaThread "IPC Server handler 1 on 10020" daemon [_thread_blocked, id=2781, stack(0xb19d5000,0xb1a26000)]
+  0xb1eb8400 JavaThread "IPC Server handler 0 on 10020" daemon [_thread_blocked, id=2780, stack(0xb1a26000,0xb1a77000)]
+  0xb1eb6800 JavaThread "IPC Server listener on 10020" daemon [_thread_in_native, id=2779, stack(0xb1a77000,0xb1ac8000)]
+  0xb1eb3c00 JavaThread "IPC Server Responder" daemon [_thread_in_native, id=2778, stack(0xb1ac8000,0xb1b19000)]
+  0xb1e3b400 JavaThread "IPC Server idle connection scanner for port 10020" daemon [_thread_blocked, id=2768, stack(0xb205e000,0xb20af000)]
+  0xb1e3f400 JavaThread "Socket Reader #1 for port 10020" [_thread_in_native, id=2767, stack(0xb2990000,0xb29e1000)]
+  0xb24e3000 JavaThread "com.google.inject.internal.util.$Finalizer" daemon [_thread_blocked, id=2765, stack(0xb20af000,0xb2100000)]
+  0xb2460400 JavaThread "Timer-0" daemon [_thread_blocked, id=2764, stack(0xb221a000,0xb226b000)]
+  0xb2450c00 JavaThread "7197832@qtp-746013-1 - Acceptor0 SelectChannelConnector@0.0.0.0:19888" daemon [_thread_in_native, id=2754, stack(0xb226b000,0xb22bc000)]
+  0xb2452400 JavaThread "10885246@qtp-746013-0" daemon [_thread_blocked, id=2753, stack(0xb22bc000,0xb230d000)]
+  0xb241dc00 JavaThread "Log Scanner/Cleaner #1" [_thread_blocked, id=2751, stack(0xb230d000,0xb235e000)]
+  0xb241c000 JavaThread "Log Scanner/Cleaner #0" [_thread_in_vm, id=2750, stack(0xb235e000,0xb23af000)]
+  0xb241a000 JavaThread "Thread[Thread-10,5,main]" daemon [_thread_blocked, id=2749, stack(0xb23af000,0xb2400000)]
+  0xb2417800 JavaThread "Timer for 'JobHistoryServer' metrics system" daemon [_thread_blocked, id=2748, stack(0xb250d000,0xb255e000)]
+  0xb2798800 JavaThread "IPC Server idle connection scanner for port 10033" daemon [_thread_blocked, id=2745, stack(0xb255e000,0xb25af000)]
+  0xb279a800 JavaThread "Socket Reader #1 for port 10033" [_thread_in_native, id=2744, stack(0xb25af000,0xb2600000)]
+  0xb6856c00 JavaThread "Service Thread" daemon [_thread_blocked, id=2294, stack(0xb3e2e000,0xb3e7f000)]
+  0xb6854c00 JavaThread "C1 CompilerThread0" daemon [_thread_blocked, id=2292, stack(0xb3e7f000,0xb3f00000)]
+  0xb6853000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=2290, stack(0xb4005000,0xb4056000)]
+  0xb683e400 JavaThread "Finalizer" daemon [_thread_blocked, id=2281, stack(0xb4056000,0xb40a7000)]
+  0xb683cc00 JavaThread "Reference Handler" daemon [_thread_blocked, id=2279, stack(0xb40a7000,0xb40f8000)]
+
+Other Threads:
+  0xb683b400 VMThread [stack: 0xb40f8000,0xb4179000] [id=2278]
+  0xb6859000 WatcherThread [stack: 0xb3a7f000,0xb3b00000] [id=2296]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0xb68100d0] Threads_lock - owner thread: 0xb241c000
+
+Heap
+ def new generation   total 4800K, used 4047K [0x50000000, 0x50530000, 0x64d50000)
+  eden space 4288K,  82% used [0x50000000, 0x50373f40, 0x50430000)
+  from space 512K,  99% used [0x50430000, 0x504afff8, 0x504b0000)
+  to   space 512K,   0% used [0x504b0000, 0x504b0000, 0x50530000)
+ tenured generation   total 10752K, used 6394K [0x64d50000, 0x657d0000, 0x8e800000)
+   the space 10752K,  59% used [0x64d50000, 0x6538e9c0, 0x6538ea00, 0x657d0000)
+ compacting perm gen  total 13312K, used 13070K [0x8e800000, 0x8f500000, 0x92800000)
+   the space 13312K,  98% used [0x8e800000, 0x8f4c38e8, 0x8f4c3a00, 0x8f500000)
+    ro space 10240K,  58% used [0x92800000, 0x92ddfac0, 0x92ddfc00, 0x93200000)
+    rw space 12288K,  59% used [0x93200000, 0x93927508, 0x93927600, 0x93e00000)
+
+Card table byte_map: [0xb44ef000,0xb470f000] byte_map_base: 0xb426f000
+
+Polling page: 0xb770b000
+
+Code Cache  [0xb478f000, 0xb4977000, 0xb678f000)
+ total_blobs=953 nmethods=754 adapters=135 free_code_cache=30847Kb largest_free_block=31585856
+
+Compilation events (10 events):
+Event: 800.953 Thread 0xb6854c00  779             org.mortbay.thread.Timeout::tick (10 bytes)
+Event: 800.953 Thread 0xb6854c00 nmethod 779 0xb496dd88 code [0xb496de80, 0xb496df2c]
+Event: 800.953 Thread 0xb6854c00  780   !         org.mortbay.thread.Timeout::tick (98 bytes)
+Event: 800.953 Thread 0xb6854c00 nmethod 780 0xb496df88 code [0xb496e0f0, 0xb496e450]
+Event: 801.954 Thread 0xb6854c00  781             sun.nio.ch.SelectorImpl::selectedKeys (28 bytes)
+Event: 801.971 Thread 0xb6854c00 nmethod 781 0xb496e788 code [0xb496e8a0, 0xb496e9d4]
+Event: 887.035 Thread 0xb6854c00  782             org.mortbay.io.nio.SelectorManager::access$000 (4 bytes)
+Event: 887.035 Thread 0xb6854c00 nmethod 782 0xb496eac8 code [0xb496ebc0, 0xb496ec30]
+Event: 940.664 Thread 0xb6854c00  783             java.util.StringTokenizer::scanToken (179 bytes)
+Event: 940.686 Thread 0xb6854c00 nmethod 783 0xb496ec88 code [0xb496ee20, 0xb496f29c]
+
+GC Heap History (10 events):
+Event: 45.802 GC heap before
+{Heap before GC invocations=41 (full 0):
+ def new generation   total 4800K, used 4674K [0x50000000, 0x50530000, 0x64d50000)
+  eden space 4288K, 100% used [0x50000000, 0x50430000, 0x50430000)
+  from space 512K,  75% used [0x504b0000, 0x50510b38, 0x50530000)
+  to   space 512K,   0% used [0x50430000, 0x50430000, 0x504b0000)
+ tenured generation   total 10752K, used 5895K [0x64d50000, 0x657d0000, 0x8e800000)
+   the space 10752K,  54% used [0x64d50000, 0x65311ca8, 0x65311e00, 0x657d0000)
+ compacting perm gen  total 12288K, used 12030K [0x8e800000, 0x8f400000, 0x92800000)
+   the space 12288K,  97% used [0x8e800000, 0x8f3bfb58, 0x8f3bfc00, 0x8f400000)
+    ro space 10240K,  58% used [0x92800000, 0x92ddfac0, 0x92ddfc00, 0x93200000)
+    rw space 12288K,  59% used [0x93200000, 0x93927508, 0x93927600, 0x93e00000)
+Event: 45.804 GC heap after
+Heap after GC invocations=42 (full 0):
+ def new generation   total 4800K, used 302K [0x50000000, 0x50530000, 0x64d50000)
+  eden space 4288K,   0% used [0x50000000, 0x50000000, 0x50430000)
+  from space 512K,  59% used [0x50430000, 0x5047bab8, 0x504b0000)
+  to   space 512K,   0% used [0x504b0000, 0x504b0000, 0x50530000)
+ tenured generation   total 10752K, used 6039K [0x64d50000, 0x657d0000, 0x8e800000)
+   the space 10752K,  56% used [0x64d50000, 0x65335ed8, 0x65336000, 0x657d0000)
+ compacting perm gen  total 12288K, used 12030K [0x8e800000, 0x8f400000, 0x92800000)
+   the space 12288K,  97% used [0x8e800000, 0x8f3bfb58, 0x8f3bfc00, 0x8f400000)
+    ro space 10240K,  58% used [0x92800000, 0x92ddfac0, 0x92ddfc00, 0x93200000)
+    rw space 12288K,  59% used [0x93200000, 0x93927508, 0x93927600, 0x93e00000)
+}
+Event: 45.918 GC heap before
+{Heap before GC invocations=42 (full 0):
+ def new generation   total 4800K, used 4590K [0x50000000, 0x50530000, 0x64d50000)
+  eden space 4288K, 100% used [0x50000000, 0x50430000, 0x50430000)
+  from space 512K,  59% used [0x50430000, 0x5047bab8, 0x504b0000)
+  to   space 512K,   0% used [0x504b0000, 0x504b0000, 0x50530000)
+ tenured generation   total 10752K, used 6039K [0x64d50000, 0x657d0000, 0x8e800000)
+   the space 10752K,  56% used [0x64d50000, 0x65335ed8, 0x65336000, 0x657d0000)
+ compacting perm gen  total 12288K, used 12267K [0x8e800000, 0x8f400000, 0x92800000)
+   the space 12288K,  99% used [0x8e800000, 0x8f3faf90, 0x8f3fb000, 0x8f400000)
+    ro space 10240K,  58% used [0x92800000, 0x92ddfac0, 0x92ddfc00, 0x93200000)
+    rw space 12288K,  59% used [0x93200000, 0x93927508, 0x93927600, 0x93e00000)
+Event: 45.920 GC heap after
+Heap after GC invocations=43 (full 0):
+ def new generation   total 4800K, used 321K [0x50000000, 0x50530000, 0x64d50000)
+  eden space 4288K,   0% used [0x50000000, 0x50000000, 0x50430000)
+  from space 512K,  62% used [0x504b0000, 0x50500520, 0x50530000)
+  to   space 512K,   0% used [0x50430000, 0x50430000, 0x504b0000)
+ tenured generation   total 10752K, used 6104K [0x64d50000, 0x657d0000, 0x8e800000)
+   the space 10752K,  56% used [0x64d50000, 0x653462b0, 0x65346400, 0x657d0000)
+ compacting perm gen  total 12288K, used 12267K [0x8e800000, 0x8f400000, 0x92800000)
+   the space 12288K,  99% used [0x8e800000, 0x8f3faf90, 0x8f3fb000, 0x8f400000)
+    ro space 10240K,  58% used [0x92800000, 0x92ddfac0, 0x92ddfc00, 0x93200000)
+    rw space 12288K,  59% used [0x93200000, 0x93927508, 0x93927600, 0x93e00000)
+}
+Event: 45.984 GC heap before
+{Heap before GC invocations=43 (full 0):
+ def new generation   total 4800K, used 4609K [0x50000000, 0x50530000, 0x64d50000)
+  eden space 4288K, 100% used [0x50000000, 0x50430000, 0x50430000)
+  from space 512K,  62% used [0x504b0000, 0x50500520, 0x50530000)
+  to   space 512K,   0% used [0x50430000, 0x50430000, 0x504b0000)
+ tenured generation   total 10752K, used 6104K [0x64d50000, 0x657d0000, 0x8e800000)
+   the space 10752K,  56% used [0x64d50000, 0x653462b0, 0x65346400, 0x657d0000)
+ compacting perm gen  total 12544K, used 12396K [0x8e800000, 0x8f440000, 0x92800000)
+   the space 12544K,  98% used [0x8e800000, 0x8f41b0b8, 0x8f41b200, 0x8f440000)
+    ro space 10240K,  58% used [0x92800000, 0x92ddfac0, 0x92ddfc00, 0x93200000)
+    rw space 12288K,  59% used [0x93200000, 0x93927508, 0x93927600, 0x93e00000)
+Event: 45.985 GC heap after
+Heap after GC invocations=44 (full 0):
+ def new generation   total 4800K, used 200K [0x50000000, 0x50530000, 0x64d50000)
+  eden space 4288K,   0% used [0x50000000, 0x50000000, 0x50430000)
+  from space 512K,  39% used [0x50430000, 0x504622a8, 0x504b0000)
+  to   space 512K,   0% used [0x504b0000, 0x504b0000, 0x50530000)
+ tenured generation   total 10752K, used 6155K [0x64d50000, 0x657d0000, 0x8e800000)
+   the space 10752K,  57% used [0x64d50000, 0x65352d08, 0x65352e00, 0x657d0000)
+ compacting perm gen  total 12544K, used 12396K [0x8e800000, 0x8f440000, 0x92800000)
+   the space 12544K,  98% used [0x8e800000, 0x8f41b0b8, 0x8f41b200, 0x8f440000)
+    ro space 10240K,  58% used [0x92800000, 0x92ddfac0, 0x92ddfc00, 0x93200000)
+    rw space 12288K,  59% used [0x93200000, 0x93927508, 0x93927600, 0x93e00000)
+}
+Event: 46.545 GC heap before
+{Heap before GC invocations=44 (full 0):
+ def new generation   total 4800K, used 4488K [0x50000000, 0x50530000, 0x64d50000)
+  eden space 4288K, 100% used [0x50000000, 0x50430000, 0x50430000)
+  from space 512K,  39% used [0x50430000, 0x504622a8, 0x504b0000)
+  to   space 512K,   0% used [0x504b0000, 0x504b0000, 0x50530000)
+ tenured generation   total 10752K, used 6155K [0x64d50000, 0x657d0000, 0x8e800000)
+   the space 10752K,  57% used [0x64d50000, 0x65352d08, 0x65352e00, 0x657d0000)
+ compacting perm gen  total 12544K, used 12484K [0x8e800000, 0x8f440000, 0x92800000)
+   the space 12544K,  99% used [0x8e800000, 0x8f4310d0, 0x8f431200, 0x8f440000)
+    ro space 10240K,  58% used [0x92800000, 0x92ddfac0, 0x92ddfc00, 0x93200000)
+    rw space 12288K,  59% used [0x93200000, 0x93927508, 0x93927600, 0x93e00000)
+Event: 46.548 GC heap after
+Heap after GC invocations=45 (full 0):
+ def new generation   total 4800K, used 240K [0x50000000, 0x50530000, 0x64d50000)
+  eden space 4288K,   0% used [0x50000000, 0x50000000, 0x50430000)
+  from space 512K,  46% used [0x504b0000, 0x504ec200, 0x50530000)
+  to   space 512K,   0% used [0x50430000, 0x50430000, 0x504b0000)
+ tenured generation   total 10752K, used 6155K [0x64d50000, 0x657d0000, 0x8e800000)
+   the space 10752K,  57% used [0x64d50000, 0x65352d08, 0x65352e00, 0x657d0000)
+ compacting perm gen  total 12544K, used 12484K [0x8e800000, 0x8f440000, 0x92800000)
+   the space 12544K,  99% used [0x8e800000, 0x8f4310d0, 0x8f431200, 0x8f440000)
+    ro space 10240K,  58% used [0x92800000, 0x92ddfac0, 0x92ddfc00, 0x93200000)
+    rw space 12288K,  59% used [0x93200000, 0x93927508, 0x93927600, 0x93e00000)
+}
+Event: 48.422 GC heap before
+{Heap before GC invocations=45 (full 0):
+ def new generation   total 4800K, used 4528K [0x50000000, 0x50530000, 0x64d50000)
+  eden space 4288K, 100% used [0x50000000, 0x50430000, 0x50430000)
+  from space 512K,  46% used [0x504b0000, 0x504ec200, 0x50530000)
+  to   space 512K,   0% used [0x50430000, 0x50430000, 0x504b0000)
+ tenured generation   total 10752K, used 6155K [0x64d50000, 0x657d0000, 0x8e800000)
+   the space 10752K,  57% used [0x64d50000, 0x65352d08, 0x65352e00, 0x657d0000)
+ compacting perm gen  total 13056K, used 12864K [0x8e800000, 0x8f4c0000, 0x92800000)
+   the space 13056K,  98% used [0x8e800000, 0x8f490078, 0x8f490200, 0x8f4c0000)
+    ro space 10240K,  58% used [0x92800000, 0x92ddfac0, 0x92ddfc00, 0x93200000)
+    rw space 12288K,  59% used [0x93200000, 0x93927508, 0x93927600, 0x93e00000)
+Event: 48.425 GC heap after
+Heap after GC invocations=46 (full 0):
+ def new generation   total 4800K, used 511K [0x50000000, 0x50530000, 0x64d50000)
+  eden space 4288K,   0% used [0x50000000, 0x50000000, 0x50430000)
+  from space 512K,  99% used [0x50430000, 0x504afff8, 0x504b0000)
+  to   space 512K,   0% used [0x504b0000, 0x504b0000, 0x50530000)
+ tenured generation   total 10752K, used 6394K [0x64d50000, 0x657d0000, 0x8e800000)
+   the space 10752K,  59% used [0x64d50000, 0x6538e9c0, 0x6538ea00, 0x657d0000)
+ compacting perm gen  total 13056K, used 12864K [0x8e800000, 0x8f4c0000, 0x92800000)
+   the space 13056K,  98% used [0x8e800000, 0x8f490078, 0x8f490200, 0x8f4c0000)
+    ro space 10240K,  58% used [0x92800000, 0x92ddfac0, 0x92ddfc00, 0x93200000)
+    rw space 12288K,  59% used [0x93200000, 0x93927508, 0x93927600, 0x93e00000)
+}
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 48.530 Thread 0xb1ecd000 Threw 0x5016d960 at /build/buildd/openjdk-7-7u65-2.5.1/build/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1247
+Event: 48.531 Thread 0xb1ecd000 Threw 0x5017d360 at /build/buildd/openjdk-7-7u65-2.5.1/build/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1247
+Event: 48.532 Thread 0xb1ecd000 Threw 0x5018da38 at /build/buildd/openjdk-7-7u65-2.5.1/build/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1247
+Event: 48.533 Thread 0xb1ecd000 Threw 0x5019a648 at /build/buildd/openjdk-7-7u65-2.5.1/build/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1247
+Event: 48.534 Thread 0xb1ecd000 Threw 0x501a7140 at /build/buildd/openjdk-7-7u65-2.5.1/build/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1247
+Event: 48.536 Thread 0xb1ecd000 Threw 0x501d23c8 at /build/buildd/openjdk-7-7u65-2.5.1/build/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1247
+Event: 48.537 Thread 0xb1ecd000 Threw 0x501df860 at /build/buildd/openjdk-7-7u65-2.5.1/build/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1247
+Event: 48.538 Thread 0xb1ecd000 Threw 0x501efda8 at /build/buildd/openjdk-7-7u65-2.5.1/build/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1247
+Event: 48.544 Thread 0xb1ecd000 Threw 0x5020ab58 at /build/buildd/openjdk-7-7u65-2.5.1/build/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1247
+Event: 48.556 Thread 0xb1ecd000 Threw 0x502184f8 at /build/buildd/openjdk-7-7u65-2.5.1/build/openjdk/hotspot/src/share/vm/prims/jvm.cpp:1247
+
+Events (10 events):
+Event: 940.686 Executing VM operation: RevokeBias done
+Event: 940.686 Executing VM operation: RevokeBias
+Event: 940.686 Executing VM operation: RevokeBias done
+Event: 940.686 Executing VM operation: RevokeBias
+Event: 940.686 Executing VM operation: RevokeBias done
+Event: 958.256 Thread 0x092ce400 Thread exited: 0x092ce400
+Event: 1008.257 Executing VM operation: RevokeBias
+Event: 1008.257 Executing VM operation: RevokeBias done
+Event: 1008.257 Thread 0x092cec00 Thread exited: 0x092cec00
+Event: 1130.057 Thread 0x092ce400 Thread added: 0x092ce400
+
+
+Dynamic libraries:
+08048000-08049000 r-xp 00000000 08:01 198141     /usr/lib/jvm/java-7-openjdk-i386/jre/bin/java
+08049000-0804a000 r--p 00000000 08:01 198141     /usr/lib/jvm/java-7-openjdk-i386/jre/bin/java
+0804a000-0804b000 rw-p 00001000 08:01 198141     /usr/lib/jvm/java-7-openjdk-i386/jre/bin/java
+092c6000-092e7000 rw-p 00000000 00:00 0          [heap]
+50000000-50530000 rw-p 00000000 00:00 0 
+50530000-64d50000 rw-p 00000000 00:00 0 
+64d50000-657d0000 rw-p 00000000 00:00 0 
+657d0000-8e800000 rw-p 00000000 00:00 0 
+8e800000-8f500000 rw-p 00000000 00:00 0 
+8f500000-92800000 rw-p 00000000 00:00 0 
+92800000-92de0000 r--p 00001000 08:01 198562     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/client/classes.jsa
+92de0000-93200000 rw-p 00000000 00:00 0 
+93200000-93928000 rw-p 005e1000 08:01 198562     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/client/classes.jsa
+93928000-93e00000 rw-p 00000000 00:00 0 
+93e00000-94111000 rw-p 00d09000 08:01 198562     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/client/classes.jsa
+94111000-94200000 rw-p 00000000 00:00 0 
+94200000-94209000 r-xp 0101a000 08:01 198562     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/client/classes.jsa
+94209000-94600000 rw-p 00000000 00:00 0 
+b15bb000-b1609000 rw-p 00000000 00:00 0          [stack:3031]
+b1609000-b160c000 ---p 00000000 00:00 0 
+b160c000-b165a000 rw-p 00000000 00:00 0          [stack:2793]
+b165a000-b165d000 ---p 00000000 00:00 0 
+b165d000-b16ab000 rw-p 00000000 00:00 0          [stack:2792]
+b16ab000-b16ae000 ---p 00000000 00:00 0 
+b16ae000-b16fc000 rw-p 00000000 00:00 0          [stack:2791]
+b16fc000-b16ff000 ---p 00000000 00:00 0 
+b16ff000-b174d000 rw-p 00000000 00:00 0          [stack:2790]
+b174d000-b1750000 ---p 00000000 00:00 0 
+b1750000-b179e000 rw-p 00000000 00:00 0          [stack:2789]
+b179e000-b17a1000 ---p 00000000 00:00 0 
+b17a1000-b17ef000 rw-p 00000000 00:00 0          [stack:2788]
+b17ef000-b17f2000 ---p 00000000 00:00 0 
+b17f2000-b1840000 rw-p 00000000 00:00 0          [stack:2787]
+b1840000-b1843000 ---p 00000000 00:00 0 
+b1843000-b1891000 rw-p 00000000 00:00 0          [stack:2786]
+b1891000-b1894000 ---p 00000000 00:00 0 
+b1894000-b18e2000 rw-p 00000000 00:00 0          [stack:2785]
+b18e2000-b18e5000 ---p 00000000 00:00 0 
+b18e5000-b1933000 rw-p 00000000 00:00 0          [stack:2784]
+b1933000-b1936000 ---p 00000000 00:00 0 
+b1936000-b1984000 rw-p 00000000 00:00 0          [stack:2783]
+b1984000-b1987000 ---p 00000000 00:00 0 
+b1987000-b19d5000 rw-p 00000000 00:00 0          [stack:2782]
+b19d5000-b19d8000 ---p 00000000 00:00 0 
+b19d8000-b1a26000 rw-p 00000000 00:00 0          [stack:2781]
+b1a26000-b1a29000 ---p 00000000 00:00 0 
+b1a29000-b1a77000 rw-p 00000000 00:00 0          [stack:2780]
+b1a77000-b1a7a000 ---p 00000000 00:00 0 
+b1a7a000-b1ac8000 rw-p 00000000 00:00 0          [stack:2779]
+b1ac8000-b1acb000 ---p 00000000 00:00 0 
+b1acb000-b1b19000 rw-p 00000000 00:00 0          [stack:2778]
+b1b19000-b1b7b000 r-xp 00000000 08:01 139328     /usr/lib/i386-linux-gnu/nss/libfreebl3.so
+b1b7b000-b1b7c000 r--p 00061000 08:01 139328     /usr/lib/i386-linux-gnu/nss/libfreebl3.so
+b1b7c000-b1b7d000 rw-p 00062000 08:01 139328     /usr/lib/i386-linux-gnu/nss/libfreebl3.so
+b1b7d000-b1b81000 rw-p 00000000 00:00 0 
+b1b81000-b1c3a000 r-xp 00000000 08:01 137834     /usr/lib/i386-linux-gnu/libsqlite3.so.0.8.6
+b1c3a000-b1c3c000 r--p 000b8000 08:01 137834     /usr/lib/i386-linux-gnu/libsqlite3.so.0.8.6
+b1c3c000-b1c3d000 rw-p 000ba000 08:01 137834     /usr/lib/i386-linux-gnu/libsqlite3.so.0.8.6
+b1c3d000-b1c3e000 rw-p 00000000 00:00 0 
+b1c3e000-b1c7e000 r-xp 00000000 08:01 139334     /usr/lib/i386-linux-gnu/nss/libsoftokn3.so
+b1c7e000-b1c7f000 r--p 00040000 08:01 139334     /usr/lib/i386-linux-gnu/nss/libsoftokn3.so
+b1c7f000-b1c80000 rw-p 00041000 08:01 139334     /usr/lib/i386-linux-gnu/nss/libsoftokn3.so
+b1c80000-b1cb9000 r-xp 00000000 08:01 137636     /usr/lib/i386-linux-gnu/libnspr4.so
+b1cb9000-b1cba000 r--p 00038000 08:01 137636     /usr/lib/i386-linux-gnu/libnspr4.so
+b1cba000-b1cbb000 rw-p 00039000 08:01 137636     /usr/lib/i386-linux-gnu/libnspr4.so
+b1cbb000-b1cbd000 rw-p 00000000 00:00 0 
+b1cbd000-b1dfb000 r-xp 00000000 08:01 137637     /usr/lib/i386-linux-gnu/libnss3.so
+b1dfb000-b1dfe000 r--p 0013d000 08:01 137637     /usr/lib/i386-linux-gnu/libnss3.so
+b1dfe000-b1dff000 rw-p 00140000 08:01 137637     /usr/lib/i386-linux-gnu/libnss3.so
+b1dff000-b1e00000 rw-p 00000000 00:00 0 
+b1e00000-b1f00000 rw-p 00000000 00:00 0 
+b1f00000-b1f52000 rw-p 00000000 00:00 0 
+b1f52000-b2000000 ---p 00000000 00:00 0 
+b2039000-b2059000 r-xp 00000000 08:01 137645     /usr/lib/i386-linux-gnu/libnssutil3.so
+b2059000-b205a000 ---p 00020000 08:01 137645     /usr/lib/i386-linux-gnu/libnssutil3.so
+b205a000-b205d000 r--p 00020000 08:01 137645     /usr/lib/i386-linux-gnu/libnssutil3.so
+b205d000-b205e000 rw-p 00023000 08:01 137645     /usr/lib/i386-linux-gnu/libnssutil3.so
+b205e000-b2061000 ---p 00000000 00:00 0 
+b2061000-b20af000 rw-p 00000000 00:00 0          [stack:2768]
+b20af000-b20b2000 ---p 00000000 00:00 0 
+b20b2000-b2100000 rw-p 00000000 00:00 0          [stack:2765]
+b2100000-b2200000 rw-p 00000000 00:00 0 
+b221a000-b221d000 ---p 00000000 00:00 0 
+b221d000-b226b000 rw-p 00000000 00:00 0          [stack:2764]
+b226b000-b226e000 ---p 00000000 00:00 0 
+b226e000-b22bc000 rw-p 00000000 00:00 0          [stack:2754]
+b22bc000-b22bf000 ---p 00000000 00:00 0 
+b22bf000-b230d000 rw-p 00000000 00:00 0          [stack:2753]
+b230d000-b2310000 ---p 00000000 00:00 0 
+b2310000-b235e000 rw-p 00000000 00:00 0          [stack:2751]
+b235e000-b2361000 ---p 00000000 00:00 0 
+b2361000-b23af000 rw-p 00000000 00:00 0          [stack:2750]
+b23af000-b23b2000 ---p 00000000 00:00 0 
+b23b2000-b2400000 rw-p 00000000 00:00 0          [stack:2749]
+b2400000-b24fb000 rw-p 00000000 00:00 0 
+b24fb000-b2500000 ---p 00000000 00:00 0 
+b250d000-b2510000 ---p 00000000 00:00 0 
+b2510000-b255e000 rw-p 00000000 00:00 0          [stack:2748]
+b255e000-b2561000 ---p 00000000 00:00 0 
+b2561000-b25af000 rw-p 00000000 00:00 0          [stack:2745]
+b25af000-b25b2000 ---p 00000000 00:00 0 
+b25b2000-b2600000 rw-p 00000000 00:00 0          [stack:2744]
+b2600000-b26fe000 rw-p 00000000 00:00 0 
+b26fe000-b2700000 ---p 00000000 00:00 0 
+b2700000-b27fc000 rw-p 00000000 00:00 0 
+b27fc000-b2800000 ---p 00000000 00:00 0 
+b2800000-b28fa000 rw-p 00000000 00:00 0 
+b28fa000-b2900000 ---p 00000000 00:00 0 
+b2900000-b2903000 r-xp 00000000 08:01 137700     /usr/lib/i386-linux-gnu/libplds4.so
+b2903000-b2904000 r--p 00002000 08:01 137700     /usr/lib/i386-linux-gnu/libplds4.so
+b2904000-b2905000 rw-p 00003000 08:01 137700     /usr/lib/i386-linux-gnu/libplds4.so
+b2905000-b2909000 r-xp 00000000 08:01 137699     /usr/lib/i386-linux-gnu/libplc4.so
+b2909000-b290a000 r--p 00003000 08:01 137699     /usr/lib/i386-linux-gnu/libplc4.so
+b290a000-b290b000 rw-p 00004000 08:01 137699     /usr/lib/i386-linux-gnu/libplc4.so
+b2921000-b2932000 r-xp 00000000 08:01 198103     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libj2pkcs11.so
+b2932000-b2933000 r--p 00010000 08:01 198103     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libj2pkcs11.so
+b2933000-b2934000 rw-p 00011000 08:01 198103     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libj2pkcs11.so
+b2937000-b2985000 rw-p 00000000 00:00 0          [stack:3032]
+b2985000-b2986000 r-xp 00000000 08:01 198106     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libjaas_unix.so
+b2986000-b2987000 r--p 00000000 08:01 198106     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libjaas_unix.so
+b2987000-b2988000 rw-p 00001000 08:01 198106     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libjaas_unix.so
+b2988000-b298b000 r--s 00017000 08:01 198076     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/jce.jar
+b298b000-b2990000 r--s 0004c000 08:01 198072     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/jsse.jar
+b2990000-b2993000 ---p 00000000 00:00 0 
+b2993000-b29e1000 rw-p 00000000 00:00 0          [stack:2767]
+b29e1000-b29e4000 ---p 00000000 00:00 0 
+b29e4000-b29fa000 rw-p 00000000 00:00 0 
+b29fa000-b2a36000 r-xp 00000000 08:01 1219       /lib/i386-linux-gnu/libpcre.so.3.13.1
+b2a36000-b2a37000 r--p 0003b000 08:01 1219       /lib/i386-linux-gnu/libpcre.so.3.13.1
+b2a37000-b2a38000 rw-p 0003c000 08:01 1219       /lib/i386-linux-gnu/libpcre.so.3.13.1
+b2a38000-b2a4b000 r-xp 00000000 08:01 1242       /lib/i386-linux-gnu/libresolv-2.19.so
+b2a4b000-b2a4c000 ---p 00013000 08:01 1242       /lib/i386-linux-gnu/libresolv-2.19.so
+b2a4c000-b2a4d000 r--p 00013000 08:01 1242       /lib/i386-linux-gnu/libresolv-2.19.so
+b2a4d000-b2a4e000 rw-p 00014000 08:01 1242       /lib/i386-linux-gnu/libresolv-2.19.so
+b2a4e000-b2a50000 rw-p 00000000 00:00 0 
+b2a50000-b2a70000 r-xp 00000000 08:01 1246       /lib/i386-linux-gnu/libselinux.so.1
+b2a70000-b2a71000 r--p 0001f000 08:01 1246       /lib/i386-linux-gnu/libselinux.so.1
+b2a71000-b2a72000 rw-p 00020000 08:01 1246       /lib/i386-linux-gnu/libselinux.so.1
+b2a72000-b2a73000 rw-p 00000000 00:00 0 
+b2a73000-b2b7d000 r-xp 00000000 08:01 1147       /lib/i386-linux-gnu/libglib-2.0.so.0.4000.0
+b2b7d000-b2b7e000 r--p 00109000 08:01 1147       /lib/i386-linux-gnu/libglib-2.0.so.0.4000.0
+b2b7e000-b2b7f000 rw-p 0010a000 08:01 1147       /lib/i386-linux-gnu/libglib-2.0.so.0.4000.0
+b2b7f000-b2cfc000 r-xp 00000000 08:01 137321     /usr/lib/i386-linux-gnu/libgio-2.0.so.0.4000.0
+b2cfc000-b2cfe000 r--p 0017c000 08:01 137321     /usr/lib/i386-linux-gnu/libgio-2.0.so.0.4000.0
+b2cfe000-b2cff000 rw-p 0017e000 08:01 137321     /usr/lib/i386-linux-gnu/libgio-2.0.so.0.4000.0
+b2cff000-b2d00000 rw-p 00000000 00:00 0 
+b2d00000-b2e00000 rw-p 00000000 00:00 0 
+b2e00000-b2efe000 rw-p 00000000 00:00 0 
+b2efe000-b2f00000 ---p 00000000 00:00 0 
+b2f00000-b2f09000 r-xp 00000000 08:01 198120     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libmanagement.so
+b2f09000-b2f0a000 r--p 00008000 08:01 198120     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libmanagement.so
+b2f0a000-b2f0b000 rw-p 00009000 08:01 198120     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libmanagement.so
+b2f0b000-b2f10000 r-xp 00000000 08:01 137218     /usr/lib/i386-linux-gnu/libffi.so.6.0.1
+b2f10000-b2f11000 r--p 00005000 08:01 137218     /usr/lib/i386-linux-gnu/libffi.so.6.0.1
+b2f11000-b2f12000 rw-p 00006000 08:01 137218     /usr/lib/i386-linux-gnu/libffi.so.6.0.1
+b2f12000-b2f15000 r-xp 00000000 08:01 137335     /usr/lib/i386-linux-gnu/libgmodule-2.0.so.0.4000.0
+b2f15000-b2f16000 r--p 00002000 08:01 137335     /usr/lib/i386-linux-gnu/libgmodule-2.0.so.0.4000.0
+b2f16000-b2f17000 rw-p 00003000 08:01 137335     /usr/lib/i386-linux-gnu/libgmodule-2.0.so.0.4000.0
+b2f17000-b2f67000 r-xp 00000000 08:01 137351     /usr/lib/i386-linux-gnu/libgobject-2.0.so.0.4000.0
+b2f67000-b2f68000 r--p 0004f000 08:01 137351     /usr/lib/i386-linux-gnu/libgobject-2.0.so.0.4000.0
+b2f68000-b2f69000 rw-p 00050000 08:01 137351     /usr/lib/i386-linux-gnu/libgobject-2.0.so.0.4000.0
+b2f6b000-b2f70000 r-xp 00000000 08:01 1189       /lib/i386-linux-gnu/libnss_dns-2.19.so
+b2f70000-b2f71000 r--p 00004000 08:01 1189       /lib/i386-linux-gnu/libnss_dns-2.19.so
+b2f71000-b2f72000 rw-p 00005000 08:01 1189       /lib/i386-linux-gnu/libnss_dns-2.19.so
+b2f72000-b2f74000 r-xp 00000000 08:01 1197       /lib/i386-linux-gnu/libnss_mdns4_minimal.so.2
+b2f74000-b2f75000 r--p 00001000 08:01 1197       /lib/i386-linux-gnu/libnss_mdns4_minimal.so.2
+b2f75000-b2f76000 rw-p 00002000 08:01 1197       /lib/i386-linux-gnu/libnss_mdns4_minimal.so.2
+b2f76000-b2f7f000 r--s 000b9000 08:01 198084     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/resources.jar
+b2f7f000-b2f96000 r-xp 00000000 08:01 198105     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libnet.so
+b2f96000-b2f97000 r--p 00016000 08:01 198105     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libnet.so
+b2f97000-b2f98000 rw-p 00017000 08:01 198105     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libnet.so
+b2f98000-b2fa9000 r-xp 00000000 08:01 198104     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libnio.so
+b2fa9000-b2faa000 r--p 00010000 08:01 198104     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libnio.so
+b2faa000-b2fab000 rw-p 00011000 08:01 198104     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libnio.so
+b2fab000-b2fb0000 r--s 00038000 08:01 78925      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/hadoop-mapreduce-client-hs-2.3.0-cdh5.1.2.jar
+b2fb0000-b2fc8000 r--s 00155000 08:01 78927      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/hadoop-mapreduce-client-core-2.3.0-cdh5.1.2.jar
+b2fc8000-b2fde000 r--s 00156000 08:01 78904      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/hadoop-mapreduce-client-jobclient-2.3.0-cdh5.1.2-tests.jar
+b2fde000-b2fe3000 r--s 0003f000 08:01 78905      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/hadoop-mapreduce-examples-2.3.0-cdh5.1.2.jar
+b2fe3000-b2fec000 r--s 00070000 08:01 78854      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/hadoop-mapreduce-client-app-2.3.0-cdh5.1.2.jar
+b2fec000-b2ff8000 r--s 00098000 08:01 78926      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/hadoop-mapreduce-client-common-2.3.0-cdh5.1.2.jar
+b2ff8000-b3000000 r--s 0005d000 08:01 78902      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/lib/avro-1.7.5-cdh5.1.2.jar
+b3000000-b30fc000 rw-p 00000000 00:00 0 
+b30fc000-b3100000 ---p 00000000 00:00 0 
+b3100000-b3102000 r--s 00009000 08:01 78852      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/hadoop-mapreduce-client-jobclient-2.3.0-cdh5.1.2.jar
+b3102000-b3103000 r--s 00002000 08:01 78853      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/hadoop-mapreduce-client-hs-plugins-2.3.0-cdh5.1.2.jar
+b3103000-b3104000 r--s 00006000 08:01 78855      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/hadoop-mapreduce-client-shuffle-2.3.0-cdh5.1.2.jar
+b3104000-b3105000 r--s 00000000 08:01 78861      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/lib/javax.inject-1.jar
+b3105000-b310e000 r--s 0006f000 08:01 78901      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/lib/log4j-1.2.17.jar
+b310e000-b311d000 r--s 0009f000 08:01 78856      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/lib/guice-3.0.jar
+b311d000-b3127000 r--s 00066000 08:01 78866      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/lib/jersey-core-1.9.jar
+b3127000-b312d000 r--s 00036000 08:01 78897      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/lib/junit-4.11.jar
+b312d000-b3131000 r--s 00034000 08:01 78890      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/lib/jackson-core-asl-1.8.8.jar
+b3131000-b3135000 r--s 0002a000 08:01 78894      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/lib/commons-io-2.4.jar
+b3135000-b3147000 r--s 0009d000 08:01 78862      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/lib/jersey-server-1.9.jar
+b3147000-b3154000 r--s 00097000 08:01 78898      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/lib/jackson-mapper-asl-1.8.8.jar
+b3154000-b315c000 r--s 0007b000 08:01 78895      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/lib/protobuf-java-2.5.0.jar
+b315c000-b315d000 r--s 0000a000 08:01 78893      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/lib/asm-3.2.jar
+b315d000-b315f000 r--s 00004000 08:01 78858      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/lib/hadoop-annotations-2.3.0-cdh5.1.2.jar
+b315f000-b3161000 r--s 00000000 08:01 78891      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/lib/aopalliance-1.0.jar
+b3161000-b3166000 r--s 00036000 08:01 78892      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/lib/commons-compress-1.4.1.jar
+b3166000-b317d000 r--s 0010e000 08:01 78896      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/lib/netty-3.6.2.Final.jar
+b317d000-b317f000 r--s 00006000 08:01 78900      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/lib/paranamer-2.3.jar
+b317f000-b3181000 r--s 0000e000 08:01 78857      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/lib/guice-servlet-3.0.jar
+b3181000-b3183000 r--s 000f2000 08:01 78903      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/lib/snappy-java-1.0.4.1.jar
+b3183000-b3184000 r--s 00003000 08:01 78859      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/lib/jersey-guice-1.9.jar
+b3184000-b3188000 r--s 00014000 08:01 78863      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/lib/xz-1.0.jar
+b3188000-b318a000 r--s 00009000 08:01 78899      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/mapreduce2/lib/hamcrest-core-1.3.jar
+b318a000-b319e000 r--s 00134000 08:01 78936      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/hadoop-yarn-api-2.3.0-cdh5.1.2.jar
+b319e000-b31a9000 r--s 0006b000 08:01 78932      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.3.0-cdh5.1.2.jar
+b31a9000-b31b8000 r--s 000b1000 08:01 78929      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.3.0-cdh5.1.2.jar
+b31b8000-b31ba000 r--s 00009000 08:01 78930      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.3.0-cdh5.1.2.jar
+b31ba000-b31cd000 r--s 0013a000 08:01 78931      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/hadoop-yarn-common-2.3.0-cdh5.1.2.jar
+b31cd000-b31ce000 r--s 00004000 08:01 78935      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.3.0-cdh5.1.2.jar
+b31ce000-b31d2000 r--s 0002b000 08:01 78994      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/hadoop-yarn-server-common-2.3.0-cdh5.1.2.jar
+b31d2000-b31d4000 r--s 00007000 08:01 78933      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.3.0-cdh5.1.2.jar
+b31d4000-b31d7000 r--s 00017000 08:01 78934      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/hadoop-yarn-client-2.3.0-cdh5.1.2.jar
+b31d7000-b31d9000 r--s 00001000 08:01 78995      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/hadoop-yarn-server-tests-2.3.0-cdh5.1.2.jar
+b31d9000-b31dd000 r--s 00028000 08:01 78947      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/jetty-util-6.1.26.jar
+b31dd000-b31de000 r--s 00004000 08:01 78963      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/jackson-jaxrs-1.8.8.jar
+b31de000-b31e4000 r--s 00045000 08:01 78952      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/commons-httpclient-3.1.jar
+b31e4000-b31f7000 r--s 000c7000 08:01 78962      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar
+b31f7000-b3200000 r--s 0006f000 08:01 78967      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/log4j-1.2.17.jar
+b3200000-b32fc000 rw-p 00000000 00:00 0 
+b32fc000-b3300000 ---p 00000000 00:00 0 
+b3300000-b3302000 r--s 00018000 08:01 78954      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/servlet-api-2.5.jar
+b3302000-b3303000 r--s 00007000 08:01 78949      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/jackson-xc-1.8.8.jar
+b3303000-b3304000 r--s 00000000 08:01 78944      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/javax.inject-1.jar
+b3304000-b3309000 r--s 00041000 08:01 78946      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/commons-lang-2.6.jar
+b3309000-b3318000 r--s 0009f000 08:01 78939      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/guice-3.0.jar
+b3318000-b331a000 r--s 0000d000 08:01 78972      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/commons-codec-1.4.jar
+b331a000-b3324000 r--s 00066000 08:01 78951      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/jersey-core-1.9.jar
+b3324000-b3328000 r--s 00021000 08:01 78961      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/jersey-json-1.9.jar
+b3328000-b332c000 r--s 00034000 08:01 78953      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/jackson-core-asl-1.8.8.jar
+b332c000-b3330000 r--s 0002a000 08:01 78959      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/commons-io-2.4.jar
+b3330000-b3332000 r--s 00004000 08:01 78940      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/stax-api-1.0-2.jar
+b3332000-b3344000 r--s 0009d000 08:01 78945      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/jersey-server-1.9.jar
+b3344000-b3351000 r--s 00097000 08:01 78964      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/jackson-mapper-asl-1.8.8.jar
+b3351000-b3359000 r--s 0007b000 08:01 78960      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar
+b3359000-b335b000 r--s 0000f000 08:01 78973      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/jettison-1.1.jar
+b335b000-b336d000 r--s 00138000 08:01 78950      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/zookeeper-3.4.5-cdh5.1.2.jar
+b336d000-b336f000 r--s 0000e000 08:01 78938      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/activation-1.1.jar
+b336f000-b3372000 r--s 00017000 08:01 78968      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar
+b3372000-b3374000 r--s 00000000 08:01 78956      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/aopalliance-1.0.jar
+b3374000-b3379000 r--s 00036000 08:01 78957      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/commons-compress-1.4.1.jar
+b3379000-b337c000 r--s 00006000 08:01 78969      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/jsr305-1.3.9.jar
+b337c000-b339d000 r--s 00172000 08:01 78955      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/guava-11.0.2.jar
+b339d000-b339f000 r--s 00014000 08:01 78970      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/jline-0.9.94.jar
+b339f000-b33a6000 r--s 0007d000 08:01 78943      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/jetty-6.1.26.jar
+b33a6000-b3400000 r--s 00632000 08:01 79307      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/hadoop-hdfs-2.3.0-cdh5.1.2.jar
+b3400000-b34fb000 rw-p 00000000 00:00 0 
+b34fb000-b3500000 ---p 00000000 00:00 0 
+b3500000-b35fe000 rw-p 00000000 00:00 0 
+b35fe000-b3600000 ---p 00000000 00:00 0 
+b3600000-b3601000 r--s 0000a000 08:01 78958      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/asm-3.2.jar
+b3601000-b3603000 r--s 0000e000 08:01 78941      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/guice-servlet-3.0.jar
+b3603000-b3604000 r--s 00003000 08:01 78942      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/jersey-guice-1.9.jar
+b3604000-b3606000 r--s 0000e000 08:01 78965      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/commons-logging-1.1.3.jar
+b3606000-b3609000 r--s 0001d000 08:01 78966      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/jersey-client-1.9.jar
+b3609000-b360b000 r--s 00009000 08:01 78971      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/commons-cli-1.2.jar
+b360b000-b360f000 r--s 00014000 08:01 78948      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/yarn/lib/xz-1.0.jar
+b360f000-b3612000 r--s 00016000 08:01 79306      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/hadoop-hdfs-nfs-2.3.0-cdh5.1.2.jar
+b3612000-b362e000 r--s 0025f000 08:01 79302      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/hadoop-hdfs-2.3.0-cdh5.1.2-tests.jar
+b362e000-b3632000 r--s 00028000 08:01 79312      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar
+b3632000-b3634000 r--s 00018000 08:01 79316      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/servlet-api-2.5.jar
+b3634000-b363d000 r--s 0006f000 08:01 79326      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/log4j-1.2.17.jar
+b363d000-b3642000 r--s 00041000 08:01 79311      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/commons-lang-2.6.jar
+b3642000-b3644000 r--s 0000d000 08:01 79331      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/commons-codec-1.4.jar
+b3644000-b364e000 r--s 00066000 08:01 79313      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/jersey-core-1.9.jar
+b364e000-b3652000 r--s 00034000 08:01 79314      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/jackson-core-asl-1.8.8.jar
+b3652000-b3656000 r--s 0002a000 08:01 79319      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/commons-io-2.4.jar
+b3656000-b3668000 r--s 0009d000 08:01 79310      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/jersey-server-1.9.jar
+b3668000-b3675000 r--s 00097000 08:01 79323      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/jackson-mapper-asl-1.8.8.jar
+b3675000-b367d000 r--s 0007b000 08:01 79320      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar
+b367d000-b3680000 r--s 00019000 08:01 79321      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/commons-el-1.0.jar
+b3680000-b3681000 r--s 0000a000 08:01 79318      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/asm-3.2.jar
+b3681000-b3684000 r--s 00016000 08:01 79325      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/jsp-api-2.1.jar
+b3684000-b369b000 r--s 0010e000 08:01 79322      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar
+b369b000-b36bc000 r--s 00172000 08:01 79317      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/guava-11.0.2.jar
+b36bc000-b36e9000 r--s 00286000 08:01 78785      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/hadoop-common-2.3.0-cdh5.1.2.jar
+b36e9000-b3700000 r--s 00156000 08:01 78787      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/hadoop-common-2.3.0-cdh5.1.2-tests.jar
+b3700000-b37fb000 rw-p 00000000 00:00 0 
+b37fb000-b3800000 ---p 00000000 00:00 0 
+b3800000-b3801000 r--s 00003000 08:01 79328      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/xmlenc-0.52.jar
+b3801000-b3804000 r--s 00006000 08:01 79329      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/jsr305-1.3.9.jar
+b3804000-b3806000 r--s 00011000 08:01 79327      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/jasper-runtime-5.5.23.jar
+b3806000-b3807000 r--s 00005000 08:01 79315      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar
+b3807000-b3809000 r--s 0000e000 08:01 79324      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar
+b3809000-b3810000 r--s 0007d000 08:01 79309      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/jetty-6.1.26.jar
+b3810000-b3812000 r--s 00009000 08:01 79330      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/hdfs/lib/commons-cli-1.2.jar
+b3812000-b3816000 r--s 00022000 08:01 78786      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/hadoop-nfs-2.3.0-cdh5.1.2.jar
+b3816000-b381c000 r--s 00043000 08:01 78815      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/commons-configuration-1.6.jar
+b381c000-b3824000 r--s 0005d000 08:01 78840      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/avro-1.7.5-cdh5.1.2.jar
+b3824000-b3828000 r--s 00028000 08:01 78800      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/jetty-util-6.1.26.jar
+b3828000-b3829000 r--s 00004000 08:01 78827      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/jackson-jaxrs-1.8.8.jar
+b3829000-b382b000 r--s 00018000 08:01 78811      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/servlet-api-2.5.jar
+b382b000-b382c000 r--s 00007000 08:01 78803      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/jackson-xc-1.8.8.jar
+b382c000-b3832000 r--s 00045000 08:01 78808      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/commons-httpclient-3.1.jar
+b3832000-b3845000 r--s 000c7000 08:01 78825      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar
+b3845000-b3847000 r--s 00003000 08:01 78805      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar
+b3847000-b384c000 r--s 0002a000 08:01 78848      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/commons-beanutils-1.7.0.jar
+b384c000-b3855000 r--s 0006f000 08:01 78837      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/log4j-1.2.17.jar
+b3855000-b385a000 r--s 00041000 08:01 78798      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/commons-lang-2.6.jar
+b385a000-b385c000 r--s 0000d000 08:01 78847      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/commons-codec-1.4.jar
+b385c000-b3866000 r--s 00066000 08:01 78807      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/jersey-core-1.9.jar
+b3866000-b386a000 r--s 00021000 08:01 78824      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/jersey-json-1.9.jar
+b386a000-b3870000 r--s 00036000 08:01 78828      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/junit-4.11.jar
+b3870000-b3874000 r--s 00034000 08:01 78809      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/jackson-core-asl-1.8.8.jar
+b3874000-b3878000 r--s 0002a000 08:01 78819      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/commons-io-2.4.jar
+b3878000-b387b000 r--s 0002b000 08:01 78823      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/jsch-0.1.42.jar
+b387b000-b3880000 r--s 0005f000 08:01 78843      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/jasper-compiler-5.5.23.jar
+b3880000-b3882000 r--s 00004000 08:01 78792      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/stax-api-1.0-2.jar
+b3882000-b3883000 r--s 0000a000 08:01 78799      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar
+b3883000-b388c000 r--s 0007b000 08:01 78816      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/jets3t-0.9.0.jar
+b388c000-b388e000 r--s 00001000 08:01 78813      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar
+b388e000-b38a0000 r--s 0009d000 08:01 78797      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/jersey-server-1.9.jar
+b38a0000-b38ad000 r--s 00097000 08:01 78829      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/jackson-mapper-asl-1.8.8.jar
+b38ad000-b38b5000 r--s 0007b000 08:01 78820      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/protobuf-java-2.5.0.jar
+b38b5000-b38b7000 r--s 0000f000 08:01 78849      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/jettison-1.1.jar
+b38b7000-b38b9000 r--s 00012000 08:01 78826      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/api-util-1.0.0-M20.jar
+b38b9000-b38bc000 r--s 00019000 08:01 78821      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/commons-el-1.0.jar
+b38bc000-b38be000 r--s 00004000 08:01 78793      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/hadoop-annotations-2.3.0-cdh5.1.2.jar
+b38be000-b38cc000 r--s 0007f000 08:01 78810      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/commons-collections-3.2.1.jar
+b38cc000-b38de000 r--s 00138000 08:01 78804      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/zookeeper-3.4.5-cdh5.1.2.jar
+b38de000-b38e3000 r--s 0003e000 08:01 78802      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/commons-net-3.1.jar
+b38e3000-b3900000 r--s 0013e000 08:01 78833      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/mockito-all-1.8.5.jar
+b3900000-b3a00000 rw-p 00000000 00:00 0 
+b3a00000-b3a01000 r--s 0000a000 08:01 78817      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/asm-3.2.jar
+b3a01000-b3a04000 r--s 00016000 08:01 78831      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/jsp-api-2.1.jar
+b3a04000-b3a16000 r--s 00097000 08:01 78838      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar
+b3a16000-b3a18000 r--s 0000e000 08:01 78791      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/activation-1.1.jar
+b3a18000-b3a1b000 r--s 00017000 08:01 78839      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/jaxb-api-2.2.2.jar
+b3a1b000-b3a20000 r--s 00036000 08:01 78814      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/commons-compress-1.4.1.jar
+b3a20000-b3a37000 r--s 0010e000 08:01 78822      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/netty-3.6.2.Final.jar
+b3a37000-b3a3d000 r--s 00032000 08:01 78836      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/httpcore-4.2.5.jar
+b3a3d000-b3a3f000 r--s 00006000 08:01 78835      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/paranamer-2.3.jar
+b3a3f000-b3a42000 r--s 00006000 08:01 78845      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/jsr305-1.3.9.jar
+b3a42000-b3a63000 r--s 00172000 08:01 78812      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/guava-11.0.2.jar
+b3a63000-b3a65000 r--s 0000c000 08:01 78818      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/hadoop-auth-2.3.0-cdh5.1.2.jar
+b3a65000-b3a67000 r--s 00005000 08:01 78790      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/slf4j-api-1.7.5.jar
+b3a67000-b3a69000 r--s 00011000 08:01 78841      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/jasper-runtime-5.5.23.jar
+b3a69000-b3a6b000 r--s 000f2000 08:01 78842      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/snappy-java-1.0.4.1.jar
+b3a6b000-b3a74000 r--s 00061000 08:01 78796      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/httpclient-4.2.5.jar
+b3a74000-b3a7b000 r--s 0007d000 08:01 78794      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/jetty-6.1.26.jar
+b3a7b000-b3a7f000 r--s 0002f000 08:01 78789      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar
+b3a7f000-b3a80000 ---p 00000000 00:00 0 
+b3a80000-b3b00000 rw-p 00000000 00:00 0          [stack:2296]
+b3b00000-b3d00000 r--p 00000000 08:01 143421     /usr/lib/locale/locale-archive
+b3d00000-b3d74000 rw-p 00000000 00:00 0 
+b3d74000-b3e00000 ---p 00000000 00:00 0 
+b3e00000-b3e01000 r--s 00003000 08:01 78844      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/xmlenc-0.52.jar
+b3e01000-b3e03000 r--s 0000e000 08:01 78830      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/commons-logging-1.1.3.jar
+b3e03000-b3e05000 r--s 00009000 08:01 78846      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/commons-cli-1.2.jar
+b3e05000-b3e22000 r--s 0016a000 08:01 78832      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/commons-math3-3.1.1.jar
+b3e22000-b3e26000 r--s 00014000 08:01 78801      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/xz-1.0.jar
+b3e26000-b3e2a000 r--s 00020000 08:01 78795      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/commons-digester-1.8.jar
+b3e2a000-b3e2e000 r--s 00085000 08:01 198067     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/localedata.jar
+b3e2e000-b3e31000 ---p 00000000 00:00 0 
+b3e31000-b3e7f000 rw-p 00000000 00:00 0          [stack:2294]
+b3e7f000-b3e82000 ---p 00000000 00:00 0 
+b3e82000-b3f00000 rw-p 00000000 00:00 0          [stack:2292]
+b3f00000-b4000000 rw-p 00000000 00:00 0 
+b4000000-b4002000 r--s 00009000 08:01 78834      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/hamcrest-core-1.3.jar
+b4002000-b4005000 r--s 00032000 08:01 198064     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/sunjce_provider.jar
+b4005000-b4008000 ---p 00000000 00:00 0 
+b4008000-b4056000 rw-p 00000000 00:00 0          [stack:2290]
+b4056000-b4059000 ---p 00000000 00:00 0 
+b4059000-b40a7000 rw-p 00000000 00:00 0          [stack:2281]
+b40a7000-b40aa000 ---p 00000000 00:00 0 
+b40aa000-b40f8000 rw-p 00000000 00:00 0          [stack:2279]
+b40f8000-b40f9000 ---p 00000000 00:00 0 
+b40f9000-b41c2000 rw-p 00000000 00:00 0          [stack:2278]
+b41c2000-b4373000 r--s 01d21000 08:01 198070     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/rt.jar
+b4373000-b4387000 rw-p 00000000 00:00 0 
+b4387000-b43a1000 rw-p 00000000 00:00 0 
+b43a1000-b43a7000 rw-p 00000000 00:00 0 
+b43a7000-b44ef000 rw-p 00000000 00:00 0 
+b44ef000-b44f2000 rw-p 00000000 00:00 0 
+b44f2000-b4595000 rw-p 00000000 00:00 0 
+b4595000-b459b000 rw-p 00000000 00:00 0 
+b459b000-b46e3000 rw-p 00000000 00:00 0 
+b46e3000-b46ea000 rw-p 00000000 00:00 0 
+b46ea000-b4703000 rw-p 00000000 00:00 0 
+b4703000-b4717000 rw-p 00000000 00:00 0 
+b4717000-b478f000 rw-p 00000000 00:00 0 
+b478f000-b4977000 rwxp 00000000 00:00 0 
+b4977000-b678f000 rw-p 00000000 00:00 0 
+b678f000-b679a000 r-xp 00000000 08:01 1191       /lib/i386-linux-gnu/libnss_files-2.19.so
+b679a000-b679b000 r--p 0000a000 08:01 1191       /lib/i386-linux-gnu/libnss_files-2.19.so
+b679b000-b679c000 rw-p 0000b000 08:01 1191       /lib/i386-linux-gnu/libnss_files-2.19.so
+b679c000-b67a6000 r-xp 00000000 08:01 1201       /lib/i386-linux-gnu/libnss_nis-2.19.so
+b67a6000-b67a7000 r--p 00009000 08:01 1201       /lib/i386-linux-gnu/libnss_nis-2.19.so
+b67a7000-b67a8000 rw-p 0000a000 08:01 1201       /lib/i386-linux-gnu/libnss_nis-2.19.so
+b67a8000-b67bd000 r-xp 00000000 08:01 1185       /lib/i386-linux-gnu/libnsl-2.19.so
+b67bd000-b67be000 r--p 00015000 08:01 1185       /lib/i386-linux-gnu/libnsl-2.19.so
+b67be000-b67bf000 rw-p 00016000 08:01 1185       /lib/i386-linux-gnu/libnsl-2.19.so
+b67bf000-b67c1000 rw-p 00000000 00:00 0 
+b67c1000-b67c2000 r--s 00004000 08:01 78806      /home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/share/hadoop/common/lib/java-xmlbuilder-0.4.jar
+b67c2000-b67c5000 r--s 0000f000 08:01 198065     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/pulse-java.jar
+b67c5000-b67cd000 r-xp 00000000 08:01 198116     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libzip.so
+b67cd000-b67ce000 r--p 00007000 08:01 198116     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libzip.so
+b67ce000-b67cf000 rw-p 00008000 08:01 198116     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libzip.so
+b67cf000-b67d7000 rw-s 00000000 08:01 412262     /tmp/hsperfdata_terrapin/2193
+b67d7000-b67fe000 r-xp 00000000 08:01 198096     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libjava.so
+b67fe000-b67ff000 r--p 00026000 08:01 198096     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libjava.so
+b67ff000-b6800000 rw-p 00027000 08:01 198096     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libjava.so
+b6800000-b68ff000 rw-p 00000000 00:00 0 
+b68ff000-b6900000 ---p 00000000 00:00 0 
+b6900000-b6902000 r--s 00012000 08:01 198068     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/zipfs.jar
+b6902000-b6905000 r--s 0003c000 08:01 198066     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/sunpkcs11.jar
+b6905000-b690c000 r-xp 00000000 08:01 1187       /lib/i386-linux-gnu/libnss_compat-2.19.so
+b690c000-b690d000 r--p 00006000 08:01 1187       /lib/i386-linux-gnu/libnss_compat-2.19.so
+b690d000-b690e000 rw-p 00007000 08:01 1187       /lib/i386-linux-gnu/libnss_compat-2.19.so
+b690e000-b6915000 r-xp 00000000 08:01 1244       /lib/i386-linux-gnu/librt-2.19.so
+b6915000-b6916000 r--p 00006000 08:01 1244       /lib/i386-linux-gnu/librt-2.19.so
+b6916000-b6917000 rw-p 00007000 08:01 1244       /lib/i386-linux-gnu/librt-2.19.so
+b6917000-b691a000 ---p 00000000 00:00 0 
+b691a000-b6968000 rw-p 00000000 00:00 0          [stack:2274]
+b6968000-b6984000 r-xp 00000000 08:01 1143       /lib/i386-linux-gnu/libgcc_s.so.1
+b6984000-b6985000 rw-p 0001b000 08:01 1143       /lib/i386-linux-gnu/libgcc_s.so.1
+b6985000-b69c9000 r-xp 00000000 08:01 1166       /lib/i386-linux-gnu/libm-2.19.so
+b69c9000-b69ca000 r--p 00043000 08:01 1166       /lib/i386-linux-gnu/libm-2.19.so
+b69ca000-b69cb000 rw-p 00044000 08:01 1166       /lib/i386-linux-gnu/libm-2.19.so
+b69cb000-b6aa7000 r-xp 00000000 08:01 137844     /usr/lib/i386-linux-gnu/libstdc++.so.6.0.19
+b6aa7000-b6aa8000 ---p 000dc000 08:01 137844     /usr/lib/i386-linux-gnu/libstdc++.so.6.0.19
+b6aa8000-b6aac000 r--p 000dc000 08:01 137844     /usr/lib/i386-linux-gnu/libstdc++.so.6.0.19
+b6aac000-b6aad000 rw-p 000e0000 08:01 137844     /usr/lib/i386-linux-gnu/libstdc++.so.6.0.19
+b6aad000-b6ab4000 rw-p 00000000 00:00 0 
+b6ab4000-b70dc000 r-xp 00000000 08:01 198114     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/client/libjvm.so
+b70dc000-b70f2000 r--p 00627000 08:01 198114     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/client/libjvm.so
+b70f2000-b7101000 rw-p 0063d000 08:01 198114     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/client/libjvm.so
+b7101000-b751c000 rw-p 00000000 00:00 0 
+b751c000-b7534000 r-xp 00000000 08:01 1279       /lib/i386-linux-gnu/libz.so.1.2.8
+b7534000-b7535000 r--p 00017000 08:01 1279       /lib/i386-linux-gnu/libz.so.1.2.8
+b7535000-b7536000 rw-p 00018000 08:01 1279       /lib/i386-linux-gnu/libz.so.1.2.8
+b7536000-b754e000 r-xp 00000000 08:01 1236       /lib/i386-linux-gnu/libpthread-2.19.so
+b754e000-b754f000 r--p 00017000 08:01 1236       /lib/i386-linux-gnu/libpthread-2.19.so
+b754f000-b7550000 rw-p 00018000 08:01 1236       /lib/i386-linux-gnu/libpthread-2.19.so
+b7550000-b7552000 rw-p 00000000 00:00 0 
+b7552000-b7555000 r-xp 00000000 08:01 1133       /lib/i386-linux-gnu/libdl-2.19.so
+b7555000-b7556000 r--p 00002000 08:01 1133       /lib/i386-linux-gnu/libdl-2.19.so
+b7556000-b7557000 rw-p 00003000 08:01 1133       /lib/i386-linux-gnu/libdl-2.19.so
+b7557000-b7700000 r-xp 00000000 08:01 1116       /lib/i386-linux-gnu/libc-2.19.so
+b7700000-b7702000 r--p 001a9000 08:01 1116       /lib/i386-linux-gnu/libc-2.19.so
+b7702000-b7703000 rw-p 001ab000 08:01 1116       /lib/i386-linux-gnu/libc-2.19.so
+b7703000-b7706000 rw-p 00000000 00:00 0 
+b7706000-b7707000 r--s 00002000 08:01 198063     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/ext/dnsns.jar
+b7707000-b7709000 r--s 00006000 08:01 325295     /usr/share/java/java-atk-wrapper.jar
+b7709000-b770a000 r--p 00855000 08:01 143421     /usr/lib/locale/locale-archive
+b770a000-b770b000 rw-p 00000000 00:00 0 
+b770b000-b770c000 r--p 00000000 00:00 0 
+b770c000-b771a000 r-xp 00000000 08:01 198107     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libverify.so
+b771a000-b771b000 r--p 0000d000 08:01 198107     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libverify.so
+b771b000-b771c000 rw-p 0000e000 08:01 198107     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/libverify.so
+b771c000-b7728000 r-xp 00000000 08:01 198098     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/jli/libjli.so
+b7728000-b7729000 r--p 0000c000 08:01 198098     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/jli/libjli.so
+b7729000-b772a000 rw-p 0000d000 08:01 198098     /usr/lib/jvm/java-7-openjdk-i386/jre/lib/i386/jli/libjli.so
+b772a000-b772d000 rw-p 00000000 00:00 0 
+b772d000-b772e000 r-xp 00000000 00:00 0          [vdso]
+b772e000-b774e000 r-xp 00000000 08:01 1092       /lib/i386-linux-gnu/ld-2.19.so
+b774e000-b774f000 r--p 0001f000 08:01 1092       /lib/i386-linux-gnu/ld-2.19.so
+b774f000-b7750000 rw-p 00020000 08:01 1092       /lib/i386-linux-gnu/ld-2.19.so
+bff17000-bff18000 rwxp 00000000 00:00 0 
+bff48000-bff6b000 rw-p 00000000 00:00 0          [stack]
+
+VM Arguments:
+jvm_args: -Dproc_historyserver -Xmx1000m -Djava.net.preferIPv4Stack=true -Dhadoop.log.dir=/home/terrapin/cloudera/ops/logs/hadoop -Dhadoop.log.file=hadoop.log -Dhadoop.home.dir=/home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2 -Dhadoop.id.str=terrapin -Dhadoop.root.logger=INFO,console -Djava.library.path=/home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/lib/native -Dhadoop.policy.file=hadoop-policy.xml -Djava.net.preferIPv4Stack=true -Dhadoop.log.dir=/home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/logs -Dhadoop.log.file=hadoop.log -Dhadoop.root.logger=INFO,console -Dmapred.jobsummary.logger=INFO,console -Dhadoop.security.logger=INFO,NullAppender 
+java_command: org.apache.hadoop.mapreduce.v2.hs.JobHistoryServer
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=/usr/lib/jvm/java-7-openjdk-i386/jre/
+PATH=/home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/bin:/home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/sbin:/usr/lib/jvm/java-7-openjdk-i386/jre/bin:/usr/local/apache-maven-3.2.3/bin:/usr/local/apache-maven-3.2.3/bin:/home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/bin:/home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/sbin:/usr/lib/jvm/java-7-openjdk-i386/jre/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+LD_LIBRARY_PATH=:/home/terrapin/cloudera/cdh5.1/hadoop-2.3.0-cdh5.1.2/lib/native
+SHELL=/bin/bash
+DISPLAY=:0
+
+Signal Handlers:
+SIGSEGV: 

@@ -14,42 +14,42 @@ CSI  2117
 
 CMSC131
 0101
-Evan Golub 
+Evan Golub
 Seats (Total: 31, Open: 0, Waitlist: 0)
 MWF 2:00pm - 2:50pm
 CSI  1115
 0102
-Evan Golub 
+Evan Golub
 Seats (Total: 31, Open: 0, Waitlist: 0)
 MWF 2:00pm - 2:50pm
 CSI  1115
 0103
-Evan Golub 
+Evan Golub
 Seats (Total: 31, Open: 1, Waitlist: 0)
 MWF 2:00pm - 2:50pm
 CSI  1115
 0104
-Evan Golub 
+Evan Golub
 Seats (Total: 31, Open: 1, Waitlist: 0)
 MWF 2:00pm - 2:50pm
 CSI  1115
 0201
-Evan Golub 
+Evan Golub
 Seats (Total: 31, Open: 1, Waitlist: 0)
 MWF 3:00pm - 3:50pm
 CSI  1115
 0202
-Evan Golub 
+Evan Golub
 Seats (Total: 31, Open: 1, Waitlist: 0)
 MWF 3:00pm - 3:50pm
 CSI  1115
 0203
-Evan Golub 
+Evan Golub
 Seats (Total: 31, Open: 0, Waitlist: 0)
 MWF 3:00pm - 3:50pm
 CSI  1115
 0204
-Evan Golub 
+Evan Golub
 Seats (Total: 31, Open: 0, Waitlist: 1)
 MWF 3:00pm - 3:50pm
 CSI  1115
@@ -96,156 +96,156 @@ CSI  1115
 
 CMSC132
 0101
-Laurence Herman 
+Laurence Herman
 Seats (Total: 34, Open: 0, Waitlist: 2)
 MWF 10:00am - 10:50am
 CSI  1115
 0102
-Laurence Herman 
+Laurence Herman
 Seats (Total: 34, Open: 0, Waitlist: 0)
 MWF 10:00am - 10:50am
 CSI  1115
 0103
-Laurence Herman 
+Laurence Herman
 Seats (Total: 34, Open: 0, Waitlist: 0)
 MWF 10:00am - 10:50am
 CSI  1115
 0104
-Laurence Herman 
+Laurence Herman
 Seats (Total: 34, Open: 0, Waitlist: 2)
 MWF 10:00am - 10:50am
 CSI  1115
 0201
-Laurence Herman 
+Laurence Herman
 Seats (Total: 34, Open: 6, Waitlist: 0)
 MWF 1:00pm - 1:50pm
 CSI  1115
 0202
-Laurence Herman 
+Laurence Herman
 Seats (Total: 34, Open: 1, Waitlist: 0)
 MWF 1:00pm - 1:50pm
 CSI  1115
 0203
-Laurence Herman 
+Laurence Herman
 Seats (Total: 34, Open: 0, Waitlist: 0)
 MWF 1:00pm - 1:50pm
 CSI  1115
 0204
-Laurence Herman 
+Laurence Herman
 Seats (Total: 34, Open: 0, Waitlist: 0)
 MWF 1:00pm - 1:50pm
 CSI  1115
 0301
-Laurence Herman 
+Laurence Herman
 Seats (Total: 30, Open: 3, Waitlist: 0)
 MWF 2:00pm - 2:50pm
 CSI  2117
 0302
-Laurence Herman 
+Laurence Herman
 Seats (Total: 29, Open: 0, Waitlist: 1)
 MWF 2:00pm - 2:50pm
 CSI  2117
 0303
-Laurence Herman 
+Laurence Herman
 Seats (Total: 29, Open: 8, Waitlist: 0)
 MWF 2:00pm - 2:50pm
 CSI  2117
 
 CMSC216
 0101
-Nelson Padua-Perez 
+Nelson Padua-Perez
 Seats (Total: 28, Open: 2, Waitlist: 0)
 TuTh 9:30am - 10:45am
 CSI  1115
 0102
-Nelson Padua-Perez 
+Nelson Padua-Perez
 Seats (Total: 28, Open: 0, Waitlist: 0)
 TuTh 9:30am - 10:45am
 CSI  1115
 0103
-Nelson Padua-Perez 
+Nelson Padua-Perez
 Seats (Total: 28, Open: 0, Waitlist: 1)
 TuTh 9:30am - 10:45am
 CSI  1115
 0104
-Nelson Padua-Perez 
+Nelson Padua-Perez
 Seats (Total: 28, Open: 0, Waitlist: 0)
 TuTh 9:30am - 10:45am
 CSI  1115
 0201
-Nelson Padua-Perez 
+Nelson Padua-Perez
 Seats (Total: 28, Open: 0, Waitlist: 0)
 TuTh 11:00am - 12:15pm
 CSI  1115
 0202
-Nelson Padua-Perez 
+Nelson Padua-Perez
 Seats (Total: 28, Open: 0, Waitlist: 1)
 TuTh 11:00am - 12:15pm
 CSI  1115
 0203
-Nelson Padua-Perez 
+Nelson Padua-Perez
 Seats (Total: 28, Open: 0, Waitlist: 1)
 TuTh 11:00am - 12:15pm
 CSI  1115
 0204
-Nelson Padua-Perez 
+Nelson Padua-Perez
 Seats (Total: 28, Open: 0, Waitlist: 0)
 TuTh 11:00am - 12:15pm
 CSI  1115
 0301
-Nelson Padua-Perez 
+Nelson Padua-Perez
 Seats (Total: 28, Open: 0, Waitlist: 0)
 TuTh 2:00pm - 3:15pm
 CSI  1115
 0302
-Nelson Padua-Perez 
+Nelson Padua-Perez
 Seats (Total: 28, Open: 2, Waitlist: 0)
 TuTh 2:00pm - 3:15pm
 CSI  1115
 0303
-Nelson Padua-Perez 
+Nelson Padua-Perez
 Seats (Total: 28, Open: 0, Waitlist: 0)
 TuTh 2:00pm - 3:15pm
 CSI  1115
 0304
-Nelson Padua-Perez 
+Nelson Padua-Perez
 Seats (Total: 28, Open: 0, Waitlist: 0)
 TuTh 2:00pm - 3:15pm
 CSI  1115
 
 CMSC250
 0101
-Clyde Kruskal 
+Clyde Kruskal
 Seats (Total: 29, Open: 0, Waitlist: 4)
 TuTh 2:00pm - 3:15pm
 CSI  2117
 0102
-Clyde Kruskal 
+Clyde Kruskal
 Seats (Total: 29, Open: 0, Waitlist: 5)
 TuTh 2:00pm - 3:15pm
 CSI  2117
 0103
-Clyde Kruskal 
+Clyde Kruskal
 Seats (Total: 29, Open: 0, Waitlist: 3)
 TuTh 2:00pm - 3:15pm
 CSI  2117
 0201
-Clyde Kruskal 
+Clyde Kruskal
 Seats (Total: 29, Open: 0, Waitlist: 5)
 TuTh 3:30pm - 4:45pm
 CSI  1115
 0202
-Clyde Kruskal 
+Clyde Kruskal
 Seats (Total: 29, Open: 0, Waitlist: 3)
 TuTh 3:30pm - 4:45pm
 CSI  1115
 0203
-Clyde Kruskal 
+Clyde Kruskal
 Seats (Total: 29, Open: 0, Waitlist: 3)
 TuTh 3:30pm - 4:45pm
 CSI  1115
 0204
-Clyde Kruskal 
+Clyde Kruskal
 Seats (Total: 29, Open: 14, Waitlist: 0)
 TuTh 3:30pm - 4:45pm
 CSI  1115
@@ -274,54 +274,54 @@ CSI  3118
 
 CMSC289
 0101
-James Reggia 
+James Reggia
 Seats (Total: 60, Open: 0, Waitlist: 36)
 TuTh 11:00am - 12:15pm
 CSI  2117
 
 CMSC330
 0101
-Chau-Wen Tseng 
+Chau-Wen Tseng
 Seats (Total: 27, Open: 0, Waitlist: 0)
 TuTh 3:30pm - 4:45pm
 CSI  3117
 0102
-Chau-Wen Tseng 
+Chau-Wen Tseng
 Seats (Total: 27, Open: 0, Waitlist: 0)
 TuTh 3:30pm - 4:45pm
 CSI  3117
 0103
-Chau-Wen Tseng 
+Chau-Wen Tseng
 Seats (Total: 27, Open: 1, Waitlist: 0)
 TuTh 3:30pm - 4:45pm
 CSI  3117
 0201
-Chau-Wen Tseng 
+Chau-Wen Tseng
 Seats (Total: 27, Open: 0, Waitlist: 0)
 TuTh 12:30pm - 1:45pm
 CSI  3117
 0202
-Chau-Wen Tseng 
+Chau-Wen Tseng
 Seats (Total: 27, Open: 0, Waitlist: 1)
 TuTh 12:30pm - 1:45pm
 CSI  3117
 0203
-Chau-Wen Tseng 
+Chau-Wen Tseng
 Seats (Total: 27, Open: 13, Waitlist: 0)
 TuTh 12:30pm - 1:45pm
 CSI  3117
 0301
-Chau-Wen Tseng 
+Chau-Wen Tseng
 Seats (Total: 27, Open: 0, Waitlist: 0)
 TuTh 2:00pm - 3:15pm
 CSI  3117
 0302
-Chau-Wen Tseng 
+Chau-Wen Tseng
 Seats (Total: 27, Open: 0, Waitlist: 0)
 TuTh 2:00pm - 3:15pm
 CSI  3117
 0303
-Chau-Wen Tseng 
+Chau-Wen Tseng
 Seats (Total: 27, Open: 1, Waitlist: 0)
 TuTh 2:00pm - 3:15pm
 CSI  3117
@@ -352,12 +352,12 @@ AVW  4172
 
 CMSC411
 0101
-Michelle Hugue 
+Michelle Hugue
 Seats (Total: 45, Open: 0, Waitlist: 3)
 TuTh 3:30pm - 4:45pm
 CSI  1122
 0201
-Michelle Hugue 
+Michelle Hugue
 Seats (Total: 45, Open: 0, Waitlist: 3)
 TuTh 2:00pm - 3:15pm
 CSI  1122
@@ -376,7 +376,7 @@ CSI  1122
 
 CMSC414
 0101
-A.U. Shankar 
+A.U. Shankar
 Seats (Total: 40, Open: 0, Waitlist: 6)
 TuTh 12:30pm - 1:45pm
 CSI  1122
@@ -388,7 +388,7 @@ CSI  1122
 
 CMSC417
 0101
-Ashok Agrawala 
+Ashok Agrawala
 Seats (Total: 40, Open: 5, Waitlist: 0)
 TuTh 11:00am - 12:15pm
 CSI  3120
@@ -400,24 +400,24 @@ CSI  2107
 
 CMSC420
 0101
-Hanan Samet 
+Hanan Samet
 Seats (Total: 40, Open: 0, Waitlist: 0)
 TuTh 12:30pm - 1:45pm
 CSI  2120
 0201
-Michelle Hugue 
+Michelle Hugue
 Seats (Total: 40, Open: 0, Waitlist: 10)
 MW 3:30pm - 4:45pm
 CSI  3120
 
 CMSC421
 0101
-Donald Perlis 
+Donald Perlis
 Seats (Total: 50, Open: 0, Waitlist: 2)
 TuTh 2:00pm - 3:15pm
 CSI  1121
 0201
-Donald Perlis 
+Donald Perlis
 Seats (Total: 46, Open: 0, Waitlist: 3)
 TuTh 9:30am - 10:45am
 CSI  3117
@@ -431,7 +431,7 @@ CSI  1121
 
 CMSC424
 0101
-Nicholas Roussopoulos 
+Nicholas Roussopoulos
 Seats (Total: 40, Open: 0, Waitlist: 2)
 TuTh 2:00pm - 3:15pm
 CSI  3120
@@ -452,14 +452,14 @@ CSI  1121
 
 CMSC430
 0101
-Jeffrey Foster 
+Jeffrey Foster
 Seats (Total: 40, Open: 1, Waitlist: 0)
 MW 3:30pm - 4:45pm
 CSI  2107
 
 CMSC433
 0101
-Michael Hicks 
+Michael Hicks
 Seats (Total: 50, Open: 0, Waitlist: 15)
 TuTh 3:30pm - 4:45pm
 CSI  1121
@@ -478,19 +478,19 @@ CSI  1121
 
 CMSC435
 0101
-James Purtilo 
+James Purtilo
 Seats (Total: 50, Open: 0, Waitlist: 4)
 TuTh 12:30pm - 1:45pm
 CSI  1121
 
 CMSC436
 0101
-Adam Porter 
+Adam Porter
 Seats (Total: 50, Open: 0, Waitlist: 14)
 TuTh 9:30am - 10:45am
 CSI  1121
 0201
-Atif Memon 
+Atif Memon
 Seats (Total: 60, Open: 0, Waitlist: 11)
 TuTh 12:30pm - 1:45pm
 CSI  2117
@@ -504,7 +504,7 @@ CSI  3120
 
 CMSC452
 0101
-William Gasarch 
+William Gasarch
 Seats (Total: 32, Open: 11, Waitlist: 0)
 TuTh 2:00pm - 3:15pm
 CSI  3118
@@ -518,7 +518,7 @@ CSI  1121
 
 CMSC460
 0101
-Harland Glaz 
+Harland Glaz
 Seats (Total: 33, Open: 0, Waitlist: 2)
 TuTh 12:30pm - 1:45pm
 MTH  0304
@@ -537,14 +537,14 @@ MTH  1311
 
 CMSC474
 0101
-Dana Nau 
+Dana Nau
 Seats (Total: 40, Open: 9, Waitlist: 0)
 TuTh 3:30pm - 4:45pm
 CSI  2120
 
 CMSC498
 0101
-Uzi Vishkin 
+Uzi Vishkin
 Seats (Total: 10, Open: 7, Waitlist: 0)
 MW 11:00am - 12:15pm
 ITV  1100
@@ -558,7 +558,7 @@ CSI  2107
 
 CMSC498
 0101
-Marshini Chetty 
+Marshini Chetty
 Seats (Total: 10, Open: 0, Waitlist: 4)
 Th 6:00pm - 8:45pm
 HBK  0123
@@ -586,7 +586,7 @@ CSI  4122
 
 CMSC666
 0101
-Tobias von Petersdorff 
+Tobias von Petersdorff
 Seats (Total: 25, Open: 8, Waitlist: 0)
 TuTh 2:00pm - 3:15pm
 CSI  4122
@@ -600,7 +600,7 @@ CSI  3120
 
 CMSC712
 0101
-A.U. Shankar 
+A.U. Shankar
 Seats (Total: 20, Open: 0, Waitlist: 0)
 TuTh 2:00pm - 3:30pm
 AVW  3258
@@ -614,35 +614,35 @@ CSI  2120
 
 CMSC733
 0101
-David Jacobs 
+David Jacobs
 Seats (Total: 32, Open: 0, Waitlist: 17)
 TuTh 11:00am - 12:15pm
 CSI  3118
 
 CMSC737
 0101
-Atif Memon 
+Atif Memon
 Seats (Total: 20, Open: 0, Waitlist: 0)
 TuTh 9:30am - 10:45am
 CSI  2118
 
 CMSC754
 0101
-David Mount 
+David Mount
 Seats (Total: 32, Open: 0, Waitlist: 15)
 TuTh 12:30pm - 1:45pm
 CSI  2118
 
 CMSC798
 0101
-Jeffrey Foster 
+Jeffrey Foster
 Seats (Total: 40, Open: 10, Waitlist: 0)
 F 11:00am - 12:50pm
 CSI  2117
 
 CMSC818
 0101
-Peter Keleher 
+Peter Keleher
 Seats (Total: 20, Open: 1, Waitlist: 0)
 TuTh 11:00am - 12:15pm
 AVW  3258
@@ -663,14 +663,14 @@ JMP  1202
 
 CMSC828
 0101
-Larry Davis 
+Larry Davis
 Seats (Total: 25, Open: 2, Waitlist: 0)
 TuTh 2:00pm - 3:15pm
 CSI  2118
 
 CMSC828
 0101
-Venkatramanan Subrahmanian 
+Venkatramanan Subrahmanian
 Seats (Total: 25, Open: 12, Waitlist: 0)
 TuTh 9:30am - 10:45am
 CSI  3118
